@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { cn } from "../../../../lib/utils";
+import { cn } from "../../../lib/utils";
 import { Spotlight } from "../../../app/component/ui/Spotlight";
 import BorderButton from "./button";
 export default function Hero () {
     return (
         <>
-            <div className="flex justify-center item-center border border-red-500 h-screen w-screen">
+            <div className="flex justify-center item-center h-screen w-screen">
                 <div className="h-screen w-screen rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
                     <Spotlight
                     className="-top-40 left-0 md:left-60 md:-top-20"
