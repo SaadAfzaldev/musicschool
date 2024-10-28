@@ -12,7 +12,7 @@ export default function Feautredcourses() {
         <div className='flex justify-center items-center text-white text-3xl text-blue-500'>
             Feautred Courses
         </div>
-        <div className='flex justify-center items-center text-white text-6xl pt-5 font-bold'> 
+        <div className='flex justify-center items-center text-white text-6xl pt-5 font-bold pl-5'> 
             Learn With Best
         </div>
         <div className="mt-10 mx-8 pt-15">

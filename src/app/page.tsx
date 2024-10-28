@@ -3,6 +3,7 @@ import Hero from "./component/ui/hero";
 import Feauterdcourses from "./component/ui/Feautredcourses";
 import ChooseUs from "./component/ui/whychooseus";
 import Testimonials from "./component/ui/musicshcool-testimonials";
+import Webinars from "./component/ui/webinars";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Feauterdcourses/>
       <ChooseUs/>
       <Testimonials/>
+      <Webinars/>
     </main>
 
   );
