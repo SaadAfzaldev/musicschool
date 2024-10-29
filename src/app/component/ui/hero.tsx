@@ -1,9 +1,16 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
 import { cn } from "../../../lib/utils";
 import { Spotlight } from "../../../app/component/ui/Spotlight";
-import BorderButton from "./button";
+import { useRouter } from "next/navigation";
+
+
 export default function Hero () {
+
+    const router = useRouter()
+
     return (
         <>
             <div className="flex justify-center item-center h-screen w-screen">
@@ -20,7 +27,14 @@ export default function Hero () {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium at dolorum explicabo consectetur iure, atque vel suscipit officia, quae enim nisi reiciendis a quisquam maxime qui omnis, itaque odit?         
                         </p>
                         <div className="flex justify-center mt-5">
-                            <BorderButton/>
+                        <button 
+                        onClick={() => router.push('/coming')}
+                 className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" >
+                     <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                     <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-black px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl ">
+                        Explore Our Courses
+                     </span>
+                 </button>
                         </div>  
                     </div>
                 </div>
