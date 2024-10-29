@@ -4,8 +4,7 @@ import Feauterdcourses from "./component/ui/Feautredcourses";
 import ChooseUs from "./component/ui/whychooseus";
 import Testimonials from "./component/ui/musicshcool-testimonials";
 import Webinars from "./component/ui/webinars";
-
-
+import { Instructor } from "./component/ui/Instructor";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
@@ -14,6 +13,7 @@ export default function Home() {
       <ChooseUs/>
       <Testimonials/>
       <Webinars/>
+      <Instructor/>
     </main>
 
   );
