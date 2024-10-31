@@ -1,9 +1,9 @@
 "use client"
 
-import Image from "next/image";
+
 import React from "react";
-import { cn } from "../../../lib/utils";
-import { Spotlight } from "../../../app/component/ui/Spotlight";
+
+import { Spotlight } from "@/app/component/ui/Spotlight";
 import { useRouter } from "next/navigation";
 
 
